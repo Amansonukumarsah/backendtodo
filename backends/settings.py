@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-+snm#d4b-*wr@$w51iqm&e6#yh=$)zgyo7mkfjla95gjo3^#&6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -146,3 +146,9 @@ REST_FRAMEWORK={
 # 6.pip install waitress
 # 7.pip install whitenoise
 # 8.add "whitenoise.middleware.WhiteNoiseMiddleware",
+# Procfile  :-web: waitress-serve --port=$PORT backends.wsgi:application
+# pip freeze > requirements.txt
+# git add .
+# 3. git commit -m 'djangotodoapi'
+# git push heroku master
+
