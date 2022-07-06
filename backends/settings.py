@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-+snm#d4b-*wr@$w51iqm&e6#yh=$)zgyo7mkfjla95gjo3^#&6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['reactdjangotodo.herokuapp.com','localhost']
 
 
 # Application definition
