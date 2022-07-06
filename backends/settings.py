@@ -45,6 +45,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -134,3 +135,14 @@ CORS_ALLOWED_ORIGINS = [
 REST_FRAMEWORK={
     'DEFAULT_RENDERER_CLASSES':('rest_framework.renderers.JSONRenderer',)
 }
+
+
+#1.heroku login
+# 2.git init
+# git add .
+# 3. git commit -m 'djangotodoapi'
+# 4.heroku create reactdjangotodo
+# 5.heroku git:remote -a reactdjangotodo
+# 6.pip install waitress
+# 7.pip install whitenoise
+# 8.add "whitenoise.middleware.WhiteNoiseMiddleware",
